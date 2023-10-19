@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">iniciar sesión</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
+		<div class="login-form">
+
+			<div class="sign-in-htm">
+
+				<form action=login_registrar.php method="POST">
+					<div class="group">
+						<input type="text" placeholder="Usuario" name="usuario" class="input" required>
+					</div>
+					<div class="group">
+						<input type="password" class="input" data-type="password" placeholder="Contraseña" name="pass" required>
+					</div>
+					
+					<div class="group">
+						<input type="submit" class="button" value="Ingresar" name="btningresar">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">¿Olvidó su contraseña?</a>
+					</div>
+				</form>
+
+			</div>
+
+			<div class="sign-up-htm">
+				<form action=login_registrar.php method="POST">
+					<div class="group">
+						<input type="text" placeholder="Nombre" name="nombre" class="input" required>
+					</div>
+					<div class="group">
+						<input type="text" placeholder="Apellido" name="apellido" class="input" required>
+					</div>
+					<div class="group">
+						<input type="text" placeholder="Correo electrónico" name="correo" class="input" required>
+					</div>
+					<div class="group">
+						<input type="text" placeholder="Usuario" name="usuario" class="input" required>
+					</div>					
+					<div class="group">
+						<input type="password" placeholder="Contraseña" name="pass" class="input" data-type="password"  required>
+					</div>				
+
+					<div class="group">
+						<input type="submit" class="button" value="Registrar" name="btnregistrar">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-1">¿Ya tiene una cuenta?</a>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
